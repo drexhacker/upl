@@ -1,0 +1,45 @@
+{
+  "name": "uniqueplumbers",
+  "type": "module",
+  "description": "The best plumbing service providers and sellers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd frontend && npm install && npm run build",
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
+    "sitemap": "babel-node backend/sitemap.js && npm install && npm run build"
+  },
+  "author": "Joshua Mayanja",
+  "license": "MIT",
+  "homepage": "https://uniqueplumbers.org",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "convert-excel-to-json": "^1.7.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "flutterwave-node-v3": "^1.0.6",
+    "html-pdf": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.7",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.5.0",
+    "react-router-sitemap": "^1.2.0",
+    "request": "^2.88.2",
+    "require": "^0.4.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^7.9.0",
+    "eslint-plugin-react": "^7.21.2",
+    "handlebars": "^4.7.7",
+    "nodemon": "^2.0.4",
+    "puppeteer": "^8.0.0"
+  }
+}
