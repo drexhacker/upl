@@ -1,0 +1,15 @@
+[Unit]
+Description=Unique Plumbers Server
+Requires=mongod.service
+After=syslog.target network.target
+
+[Service]
+Environment="NODE_ENV=production"
+WorkingDirectory=/var/www/upl
+ExecStart=/home/joshua/.nvm/versions/node/v12.21.0/bin/npm start
+Type=simple
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
